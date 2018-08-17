@@ -11,8 +11,4 @@ class Location extends Model
 		return $this->hasOne('App\User');
     }
 
-    public function resource(){
-    	
-    	return $this->belongsToMany('App\Resource');
-    }
 }

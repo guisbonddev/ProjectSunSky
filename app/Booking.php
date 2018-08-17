@@ -8,11 +8,11 @@ class Booking extends Model
 {
     public function aircraft(){
 
-    	return $this->hasOne('App\Resource','id','aircraft');
+    	return $this->hasMany('App\Resource','id','aircraft');
     }
 
     public function other_resources(){
 
-    	return $this->hasOne('App\Resource','id','other_resources');
+    	return $this->hasMany('App\Resource','id','other_resources');
     }
 }
