@@ -21,8 +21,8 @@ class CreateMxProfilesTable extends Migration
             $table->date('last_annual');
             $table->date('last_elt');
             $table->integer('last_flight');
-            $table->varchar('hobbs');
-            $table->varchar('tach');
+            $table->string('hobbs');
+            $table->string('tach');
             $table->timestamps();
         });
     }

@@ -18,10 +18,10 @@ class CreateDispatchLogsTable extends Migration
             $table->integer('aircraft_id');
             $table->datetime('date_out');
             $table->datetime('date_in');
-            $table->varchar('hobbs_out');
-            $table->varchar('hobbs_in');
-            $table->varchar('tach_out');
-            $table->varchar('tach_in');
+            $table->string('hobbs_out');
+            $table->string('hobbs_in');
+            $table->string('tach_out');
+            $table->string('tach_in');
             $table->text('route');
             $table->integer('total_time');
             $table->integer('pilot');

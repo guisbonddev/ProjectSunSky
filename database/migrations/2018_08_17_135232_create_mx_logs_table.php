@@ -17,8 +17,8 @@ class CreateMxLogsTable extends Migration
             $table->increments('id');
             $table->integer('aircraft_id');
             $table->string('type');
-            $table->varchar('hobbs');
-            $table->varchar('tach');
+            $table->string('hobbs');
+            $table->string('tach');
             $table->datetime('date');
             $table->timestamps();
         });

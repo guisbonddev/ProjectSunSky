@@ -19,7 +19,7 @@ class CreateSchoolInfoTable extends Migration
             $table->string('location');
             $table->text('description');
             $table->integer('manager');
-            $table->type('string');
+            $table->string('type');
             $table->integer('instruction_rate');
             $table->string('billing_type');
             $table->boolean('setup');
